@@ -57,13 +57,14 @@ h2 {
 
 .app .quote-container .quote i {
   font-size: 10px;
-  position: absolute;
-  top: -3px;
+  position: relative;
+  top: -8px;
 }
 
 .app .quote-container .quote span {
-  padding: 0 6px 0 16px;
+  padding: 0 5px;
   text-transform: capitalize;
+  line-height: 1.7;
 }
 
 
