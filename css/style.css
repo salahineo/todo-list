@@ -1,0 +1,316 @@
+/* Start Global */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.app {
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  min-height: calc(100vh - 120px);
+  position: relative;
+}
+
+input:focus {
+  outline: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* End Global */
+
+/* Start App */
+
+.app .quote-container {
+  text-align: center;
+  margin: 0 auto 15px;
+  color: #666666;
+}
+
+.app .quote-container .quote {
+  position: relative;
+}
+
+.app .quote-container .quote i {
+  font-size: 10px;
+  position: absolute;
+  top: -3px;
+}
+
+.app .quote-container .quote span {
+  padding: 0 6px 0 16px;
+  text-transform: capitalize;
+}
+
+
+.app .add-task {
+  background-color: #009688;
+  padding: 15px;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.app .add-task input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 10px 15px;
+  display: inline-block;
+  width: calc(100% - 20px);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 16px;
+}
+
+.app .add-task input::placeholder {
+  color: #eeeeee;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.app .add-task input:focus::placeholder {
+  opacity: 0;
+}
+
+.app .add-task .add-task-button {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #009688;
+  border-radius: 50%;
+}
+
+.app .add-task .add-task-button i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app .add-task .add-task-button i:hover {
+  transform: rotate(90deg);
+}
+
+.app .app-message {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  display: none;
+}
+
+.app .app-message i {
+  margin-right: 10px;
+}
+
+.app .app-message i.fa-times {
+  cursor: pointer;
+}
+
+.app .app-message.success {
+  background-color: #28a745;
+}
+
+.app .app-message.warning {
+  background-color: #ff7400;
+}
+
+
+.app .app-message.danger {
+  background-color: #dc3545;
+}
+
+.app .tasks-list {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.app .tasks-list .task {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 10px;
+  border-bottom: 1px solid #dddddd;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.app .tasks-list .task .task-title {
+  word-break: break-word;
+}
+
+.app .tasks-list .task .task-title.completed {
+  text-decoration: line-through;
+}
+
+.app .tasks-list .task i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.app .tasks-list .task .task-content i {
+  margin-right: 10px;
+}
+
+.app .tasks-list .task .control {
+  width: 45px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.app .tasks-list .task .control i:first-of-type:hover {
+  color: #ff7400;
+}
+
+.app .tasks-list .task .control i:last-of-type:hover {
+  color: #dc3545;
+}
+
+.app .tasks-stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app .tasks-stats div {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #ffffff;
+
+}
+
+.app .tasks-stats div {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.app .tasks-stats div:hover {
+  opacity: 0.8;
+}
+
+.app .tasks-stats div.count {
+  background-color: #007bff;
+}
+
+.app .tasks-stats div.completed {
+  background-color: #28a745;
+}
+
+.app .tasks-stats div.pending {
+  background-color: #ff7400;
+}
+
+.app .tasks-stats div.clear-all-tasks {
+  background-color: #dc3545;
+}
+
+.app .tasks-stats div > i {
+  margin-right: 4px;
+}
+
+.app .tasks-stats div span {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 1px 3px;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .app .tasks-stats div.clear-all-tasks {
+    margin-left: auto;
+  }
+}
+
+/* End App */
+
+/* Start Footer */
+
+.footer {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .copyright {
+  font-weight: 600;
+}
+
+.footer .copyright span.name {
+  color: #0075ff;
+}
+
+.footer a {
+  color: #000000;
+}
+
+.footer a i {
+  transition: 0.3s;
+  padding: 0 7px;
+  font-size: 17px;
+}
+
+.footer a i:hover {
+  color: #0075ff;
+}
+
+/* End Footer */
+
+/* Start Media */
+
+@media (max-width: 650px) {
+  .app-content {
+    margin-bottom: 80px;
+  }
+
+  .repo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .repo .buttons {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .copyright {
+    margin-bottom: 20px;
+  }
+}
+
+/* End Media */

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Mohamed Salah" />
+  <meta name="description" content="ToDo List App" />
+  <meta name="keywords" content="to do, todo list, todo app, todo, salahineo" />
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Title -->
+  <title>To Do List</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/fontawesome.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+  <!-- Start Container -->
+  <div class="app-container">
+    <!-- Start App -->
+    <div class="app">
+      <!-- Heading -->
+      <h2>To Do List</h2>
+      <!-- Quote -->
+      <div class="quote-container">
+        <span class="quote">
+          <i class="fas fa-quote-left"></i>
+          <span></span>
+          <i class="fas fa-quote-right"></i>
+        </span>
+      </div>
+      <!-- Add New Task -->
+      <div class="add-task">
+        <input class="new-task" type="text" placeholder="Add New Task">
+        <span class="add-task-button"><i class="fas fa-plus"></i></span>
+      </div>
+      <!-- App Message -->
+      <div class="app-message"></div>
+      <!-- Tasks List -->
+      <div class="tasks-list"></div>
+      <!-- Tasks Stats -->
+      <div class="tasks-stats">
+        <div class="count">
+          <i class="fas fa-tasks"></i>
+          Tasks <span></span>
+        </div>
+        <div class="completed">
+          <i class="fas fa-check-circle"></i>
+          Completed <span></span>
+        </div>
+        <div class="pending">
+          <i class="fas fa-clock"></i>
+          Pending <span></span>
+        </div>
+        <div class="clear-all-tasks">
+          <i class="fa fa-trash"></i>
+          Clear All
+        </div>
+      </div>
+    </div>
+    <!-- End App -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="copyright">
+        &copy; <span id="footer-copyright-year"></span> | <span class="name">Mohamed Salah</span>
+      </div>
+      <div class="links">
+        <a href="https://github.com/salahineo" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/salahineo/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://salahineo.github.io/salahineo/" target="_blank">
+          <i class="fas fa-globe-africa"></i>
+        </a>
+        <a href="https://twitter.com/salahineo" target="_blank">
+          <i class="fab fa-twitter"> </i>
+        </a>
+        <a href="https://www.facebook.com/salahineo/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="mailto:salahineo.work@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Container -->
+
+  <!-- Script -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/sweetalert.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
