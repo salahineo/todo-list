@@ -54,6 +54,8 @@ Here is the demo of this [application](https://salahineo.github.io/todo-list/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![License: GPL v3](https://img.shields.io/badge/%C2%A9_2021-Mohamed%20Salah-065AAA)
 
+This project is tested with BrowserStack.
+
 ---
 
 **If you find my work good, consider giving it a :star: or fork-ing to show some :heart:. It helps me stay on track and be motivated.**
