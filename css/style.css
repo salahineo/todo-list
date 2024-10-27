@@ -262,14 +262,14 @@ h2 {
   margin: 20px auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer .copyright {
   font-weight: 600;
 }
 
-.footer .copyright span.name {
+.footer .copyright .name {
   color: #0075ff;
 }
 
